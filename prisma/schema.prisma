@@ -9,3 +9,13 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Agenda {
+  id String @id @default(uuid())
+  criadoEm DateTime @default(now())
+  atualizadoEm DateTime @updatedAt
+
+  disciplina String
+  datahora DateTime
+  descritivo String?
+}
