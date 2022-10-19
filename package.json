@@ -14,17 +14,34 @@
     "@fullcalendar/daygrid": "^5.11.3",
     "@fullcalendar/react": "^5.11.2",
     "@mui/material": "^5.10.8",
+    "@prisma/client": "^4.5.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-calendar": "^3.9.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^18.11.2",
     "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
     "postcss": "^8.4.17",
-    "prisma": "^4.4.0",
-    "tailwindcss": "^3.1.8"
-  }
+    "prisma": "^4.5.0",
+    "tailwindcss": "^3.1.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiofelipefl/agenda-avaliacoes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiofelipefl/agenda-avaliacoes/issues"
+  },
+  "homepage": "https://github.com/caiofelipefl/agenda-avaliacoes#readme"
 }

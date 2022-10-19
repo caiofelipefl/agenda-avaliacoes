@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 export default function Home() {
-  const [date, setDate] = useState(new Date())
   const [avaliacoes, setAvaliacoes] = useState([])
   const [disciplina, setDisciplina] = useState("")
   const [datahora, setDatahora] = useState("")
