@@ -1,23 +1,23 @@
 import { PrismaClient } from '@prisma/client'
 
-const prisma = new PrismaClient()
+export const prismaClient = new PrismaClient()
 
 async function main() {
   // ... you will write your Prisma Client queries here
-  const usersWithPosts = await prisma.user.findMany({
-    include: {
-      posts: true,
-    },
+  const provas = await prismaClient.agenda.findMany({
+    // include: {
+    //   posts: true,
+    // },
   })
-  console.dir(usersWithPosts, { depth: null })
+  console.dir(provas, { depth: null })
 }
 
 main()
   .then(async () => {
-    await prisma.$disconnect()
+    await prismaClient.$disconnect()
   })
   .catch(async (e) => {
     console.error(e)
-    await prisma.$disconnect()
+    await prismaClient.$disconnect()
     process.exit(1)
   })
